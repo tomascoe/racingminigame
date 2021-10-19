@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Simulador de carreras</title>
+</head>
+<body>
+    <div class="cont container-fluid">
+        <section id="selection" class="selection">
+            <div class="selectionHeader">
+                <h1 class="text-uppercase text-center">simulador de carreras</h1>
+            </div>    
+            <div class="selectionSubheader">
+                <h5 class="text-uppercase text-center">seleccione los dos vehiculos que se enfrentarán</h5>
+            </div> 
+            <div class="selectionCards">
+                <div class="container-fluid">
+                    <!-- start -->
+                    <div class="row row-cols-6">
+                        <!-- VW GOLF -->
+                        <div class="col mb-4">
+                            <div id="vwCard" class="card vw">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="vwBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="vwModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="vwVel"></span><span>km/h</span></p>
+                                    <button id="vwBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LAMBO AVENTADOR -->
+                        <div class="col mb-4">
+                            <div id="lamboCard" class="card lambo">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="lamboBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="lamboModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="lamboVel"></span><span>km/h</span></p>
+                                    <button id="lamboBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MCLAREN P1 -->
+                        <div class="col mb-4">
+                            <div id="mclarenCard" class="card mclaren">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="mclarenBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="mclarenModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="mclarenVel"></span><span>km/h</span></p>
+                                    <button id="mclarenBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PORSCHE 911 GT3 -->
+                        <div class="col mb-4">
+                            <div id="porscheCard" class="card porsche">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="porscheBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="porscheModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="porscheVel"></span><span>km/h</span></p>
+                                    <button id="porscheBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FERRARI 812 SUPERFAST -->
+                        <div class="col mb-4">
+                            <div id="ferrariCard" class="card ferrari">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="ferrariBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="ferrariModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="ferrariVel"></span><span>km/h</span></p>
+                                    <button id="ferrariBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUGATTI VEYRON -->
+                        <div class="col mb-4">
+                            <div id="bugattiCard" class="card bugatti">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="bugattiBrand"></span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="bugattiModel"></span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="bugattiVel"></span><span>km/h</span></p>
+                                    <button id="bugattiBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- finish -->
+                    </div>
+                </div>
+            </div>
+            <div class="sel">
+                <div class="container">
+                    <div class="selectedVehicles">
+                        <div class="selected selected1"><img src="" alt=""></div>
+                        <span>vs</span>
+                        <div class="selected selected2"><img src="" alt=""></div>
+                    </div>
+                    <div class="selBtns">
+                        <a href="#race" type="button"  class="btn btn-secondary">siguiente</a>
+                        <button id="restablecer" type="button" class="btn btn-secondary">restablecer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="race" class="race">
+            <div class="sel">
+                <div class="container">
+                    <div class="selectedVehicles">
+                        <div class="selected selected1"><img src="" alt=""></div>
+                        <span>vs</span>
+                        <div class="selected selected2"><img src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="racetrack">
+                <div class="track">
+                    <div id="auto1"></div>
+                    <div id="auto2"></div>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="startBtn" type="button" class="btn btn-secondary">iniciar carrera</button>
+                <a href="#selection" id="restartBtn" type="button" class="btn btn-secondary">reiniciar juego</a>
+            </div>
+            <div id="winner" class="winner"></div>
+        </section>  
+    </div>
+    <!-- SCRIPTS -->
+    <script src="bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vehicle.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

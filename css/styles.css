@@ -1,0 +1,300 @@
+.btn {
+  text-transform: capitalize;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+body .cont {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+body .cont section {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: -ms-grid;
+  display: grid;
+}
+
+body .cont .selection {
+  background: #262626;
+  color: #f2f2f2;
+      grid-template-areas: "header" "subheader" "cards" "sel";
+  -ms-grid-rows: 0.7fr 0.7fr 3fr 3fr;
+      grid-template-rows: 0.7fr 0.7fr 3fr 3fr;
+}
+
+body .cont .selection .selectionHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cont .selection .selectionSubheader {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subheader;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cont .selection .selectionCards {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: cards;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cont .selection .selectionCards .card {
+  background: #f2f2f2;
+}
+
+body .cont .selection .selectionCards .card .card-body b {
+  display: block;
+}
+
+body .cont .selection .selectionCards .card .card-body span {
+  text-transform: capitalize;
+}
+
+body .cont .selection .selectionCards .card .card-body .btn {
+  width: 100%;
+}
+
+body .cont .selection .sel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sel;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cont .selection .sel .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .cont .selection .sel .container .selBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cont .selection .sel .container .selBtns button {
+  margin: 0 2rem;
+}
+
+body .cont .selection .sel .container .selBtns a {
+  margin: 0 2rem;
+}
+
+body .cont .race {
+  background: #1c1c1c;
+  color: #f2f2f2;
+      grid-template-areas: "sel" "track" "btn" "winner";
+  -ms-grid-rows: 2fr 3fr 0.5fr 2fr;
+      grid-template-rows: 2fr 3fr 0.5fr 2fr;
+}
+
+body .cont .race .sel {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sel;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .cont .race .racetrack {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: track;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cont .race .racetrack .track {
+  width: 1500px;
+  height: 250px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #444444;
+}
+
+body .cont .race .btns {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .cont .race .btns button {
+  margin: 0 2rem;
+}
+
+body .cont .race .winner {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: winner;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.selectedVehicles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectedVehicles span {
+  font-size: 3rem;
+}
+
+.selectedVehicles .selected {
+  height: 170px;
+  width: 302px;
+  margin: 0 2rem;
+  background: #f2f2f2;
+}
+
+.selectedVehicles .selected img {
+  width: 100%;
+  height: 100%;
+}
+
+#auto1,
+#auto2 {
+  height: 50px;
+  width: 50px;
+}
+
+.volkswagen {
+  background: #ffff;
+}
+
+.lamborghini {
+  background: #387eb5;
+}
+
+.mclaren {
+  background: #e68d37;
+}
+
+.porsche {
+  background: #56bd37;
+}
+
+.ferrari {
+  background: #ff2800;
+}
+
+.bugatti {
+  background: #000;
+}
+/*# sourceMappingURL=styles.css.map */

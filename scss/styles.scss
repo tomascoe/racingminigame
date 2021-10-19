@@ -1,0 +1,182 @@
+.btn {
+  text-transform: capitalize;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  .cont {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    section {
+      flex: none;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: grid;
+    }
+    .selection {
+      background: rgb(38, 38, 38);
+      color: #f2f2f2;
+      grid-template-areas:
+        "header"
+        "subheader"
+        "cards"
+        "sel";
+      grid-template-rows: 0.7fr 0.7fr 3fr 3fr;
+      .selectionHeader {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .selectionSubheader {
+        grid-area: subheader;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .selectionCards {
+        grid-area: cards;
+        color: black;
+        display: flex;
+        align-items: center;
+        .card {
+          background: #f2f2f2;
+          .card-body {
+            b {
+              display: block;
+            }
+            span {
+              text-transform: capitalize;
+            }
+            .btn {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .sel {
+        grid-area: sel;
+        display: flex;
+        align-items: center;
+        .container {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+          .selBtns {
+            display: flex;
+            justify-content: center;
+            button {
+              margin: 0 2rem;
+            }
+            a {
+              margin: 0 2rem;
+            }
+          }
+        }
+      }
+    }
+    .race {
+      background: rgb(28, 28, 28);
+      color: #f2f2f2;
+      grid-template-areas:
+        "sel"
+        "track"
+        "btn"
+        "winner";
+      grid-template-rows: 2fr 3fr 0.5fr 2fr;
+      .sel {
+        grid-area: sel;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .racetrack {
+        grid-area: track;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .track {
+          width: 1500px;
+          height: 250px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          background: rgb(68, 68, 68);
+        }
+      }
+      .btns {
+        grid-area: btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          margin: 0 2rem;
+        }
+      }
+      .winner {
+        grid-area: winner;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+.selectedVehicles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 3rem;
+  }
+  .selected {
+    height: 170px;
+    width: 302px;
+    margin: 0 2rem;
+    background: #f2f2f2;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#auto1,
+#auto2 {
+  height: 50px;
+  width: 50px;
+}
+
+.volkswagen {
+  background: #ffff;
+}
+.lamborghini {
+  background: #387eb5;
+}
+.mclaren {
+  background: #e68d37;
+}
+.porsche {
+  background: #56bd37;
+}
+.ferrari {
+  background: #ff2800;
+}
+.bugatti {
+  background: #000;
+}

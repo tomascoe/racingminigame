@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Simulador%20de%20carreras_archivos/bootstrap.css"> 
+    <link rel="stylesheet" href="Simulador%20de%20carreras_archivos/styles.css">
+    <title>Simulador de carreras</title>
+</head>
+<body scroll="no">
+    <div class="cont container-fluid">
+        <section id="selection" class="selection">
+            <div class="selectionHeader">
+                <h1 class="text-uppercase text-center">simulador de carreras</h1>
+            </div>    
+            <div class="selectionSubheader">
+                <h5 class="text-uppercase text-center">seleccione los dos vehiculos que se enfrentarán</h5>
+            </div> 
+            <div class="selectionCards">
+                <div class="container-fluid">
+                    <!-- start -->
+                    <div class="row row-cols-6">
+                        <!-- VW GOLF -->
+                        <div class="col mb-4">
+                            <div id="vwCard" class="card vw"><img src="Simulador%20de%20carreras_archivos/golf.jpg" class="vwimg card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="vwBrand">volkswagen</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="vwModel">golf</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="vwVel">244</span><span>km/h</span></p>
+                                    <button id="vwBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- LAMBO AVENTADOR -->
+                        <div class="col mb-4">
+                            <div id="lamboCard" class="card lambo"><img src="Simulador%20de%20carreras_archivos/aventador.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="lamboBrand">lamborghini</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="lamboModel">aventador</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="lamboVel">355</span><span>km/h</span></p>
+                                    <button id="lamboBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MCLAREN P1 -->
+                        <div class="col mb-4">
+                            <div id="mclarenCard" class="card mclaren"><img src="Simulador%20de%20carreras_archivos/mclaren.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="mclarenBrand">mclaren</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="mclarenModel">p1</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="mclarenVel">350</span><span>km/h</span></p>
+                                    <button id="mclarenBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PORSCHE 911 GT3 -->
+                        <div class="col mb-4">
+                            <div id="porscheCard" class="card porsche"><img src="Simulador%20de%20carreras_archivos/porsche.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="porscheBrand">porsche</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="porscheModel">911 gt3</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="porscheVel">318</span><span>km/h</span></p>
+                                    <button id="porscheBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FERRARI 812 SUPERFAST -->
+                        <div class="col mb-4">
+                            <div id="ferrariCard" class="card ferrari"><img src="Simulador%20de%20carreras_archivos/superfast.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="ferrariBrand">ferrari</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="ferrariModel">812 superfast</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="ferrariVel">340</span><span>km/h</span></p>
+                                    <button id="ferrariBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BUGATTI VEYRON -->
+                        <div class="col mb-4">
+                            <div id="bugattiCard" class="card bugatti"><img src="Simulador%20de%20carreras_archivos/veyron.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Brand:</b> <span class="cardInfo" id="bugattiBrand">bugatti</span></p>
+                                    <p class="card-text"><b>Model:</b> <span class="cardInfo" id="bugattiModel">veyron</span></p>
+                                    <p class="card-text"><b>Speed:</b> <span class="cardInfo" id="bugattiVel">431</span><span>km/h</span></p>
+                                    <button id="bugattiBtn" type="button" class="btn btn-secondary">seleccionar</button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- finish -->
+                    </div>
+                </div>
+            </div>
+            <div class="sel">
+                <div class="container">
+                    <div class="selectedVehicles">
+                        <div class="selected selected1"><img src="" alt=""></div>
+                        <span>vs</span>
+                        <div class="selected selected2"><img src="" alt=""></div>
+                    </div>
+                    <div class="selBtns">
+                        <a href="#race" type="button" class="btn btn-secondary">siguiente</a>
+                        <button id="restablecer" type="button" class="btn btn-secondary">restablecer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="race" class="race">
+            <div class="sel">
+                <div class="container">
+                    <div class="selectedVehicles">
+                        <div class="selected selected1"><img src="" alt=""></div>
+                        <span>vs</span>
+                        <div class="selected selected2"><img src="" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="racetrack">
+                <div class="track">
+                    <div id="auto1"></div>
+                    <div id="auto2"></div>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="startBtn" type="button" class="btn btn-secondary">iniciar carrera</button>
+                <a href="#selection" id="restartBtn" type="button" class="btn btn-secondary">reiniciar juego</a>
+            </div>
+            <div id="winner" class="winner"></div>
+        </section>  
+    </div>
+    <!-- SCRIPTS -->
+    <script src="Simulador%20de%20carreras_archivos/jquery-3.js"></script>
+    <script src="Simulador%20de%20carreras_archivos/bootstrap.js"></script>
+    <script src="Simulador%20de%20carreras_archivos/vehicle.js"></script>
+    <script src="Simulador%20de%20carreras_archivos/main.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>

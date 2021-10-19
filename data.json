@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1, 
+        "img":"<img src='assets/cars/golf.jpg' class='vwimg card-img-top' alt='...'>",
+        "brand": "volkswagen", 
+        "model": "golf", 
+        "vel": 244
+    },
+    {
+        "id": 2, 
+        "img":"<img src='assets/cars/aventador.jpg' class='card-img-top' alt='...'>",
+        "brand": "lamborghini", 
+        "model": "aventador", 
+        "vel": 355
+    },
+    {
+        "id": 3, 
+        "img":"<img src='assets/cars/mclaren.jpg' class='card-img-top' alt='...'>",
+        "brand": "mclaren", 
+        "model": "p1", 
+        "vel": 350
+    },
+    {
+        "id": 4, 
+        "img":"<img src='assets/cars/porsche.jpg' class='card-img-top' alt='...'>",
+        "brand": "porsche", 
+        "model": "911 gt3", 
+        "vel": 318
+    },
+    {
+        "id": 5, 
+        "img":"<img src='assets/cars/superfast.jpg' class='card-img-top' alt='...'>",
+        "brand": "ferrari", 
+        "model": "812 superfast", 
+        "vel": 340
+    },
+    {
+        "id": 6, 
+        "img":"<img src='assets/cars/veyron.jpg' class='card-img-top' alt='...'>",
+        "brand": "bugatti", 
+        "model": "veyron", 
+        "vel": 431
+    }
+  ]
